@@ -1,0 +1,22 @@
+.inputTodo{
+    
+    width: 300px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.inputTodo::placeholder{
+    color: rgb(134, 134, 133);
+}
+button{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
