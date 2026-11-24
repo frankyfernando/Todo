@@ -10,7 +10,7 @@ function TodoList(props){
                                 <input type="checkbox" className="checkbox"/>
                                 <p className="toDo">{todo}</p>
                                 <div className="buttonTodo">
-                                    <button className="edit">Edit</button>
+                                    <button className="edit" onClick={() => props.editTodo(index)}>Edit</button>
                                     <button className="remove" onClick={() => props.removeTodos(index)}>Hapus</button>
                                 </div>
                             </li>

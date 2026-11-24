@@ -9,10 +9,11 @@ function TodoInputList(props){
             props.addTodo(inputValue);
             setInputValue("");
         }
+        props.inputTodo.current.value = "";
     }
     return(
         <form onSubmit={submitTodo}>
-            <input type='text' className='inputTodo' name="Todo" onChange={(e) => setInputValue(e.target.value)} placeholder='Type your task here...'/>
+            <input ref={props.inputTodo} type='text' className='inputTodo' name="Todo" onChange={(e) => setInputValue(e.target.value)} placeholder='Type your task here...'/>
 
             <button type='submit'>+ Add</button>
         </form>
